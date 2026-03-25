@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>githumu senior school | Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .blue-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+    </style>
+<style>
+    #backToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+  z-index: 99; /* Sit on top of everything */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #1e3a8a; /* Your Theme Blue */
+  color: white; /* Arrow color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Make it a circle */
+  font-size: 18px; /* Increase font size */
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+#backToTop:hover {
+  background-color: #3b82f6; /* Lighter blue on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+     .second-sect {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f5f9; /* A light, neutral background */
+            color: #1e293b; /* Darker text for readability */
+            padding: 0rem;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 42rem;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;}
+        /* Mobile-friendly curve: less extreme on small screens */
+        .curved-edge {
+            border-radius: 0 0 0 100px;
+        }
+        @media (min-width: 768px) {
+            .curved-edge {
+                border-bottom-left-radius: 50% 100%;
+                border-top-left-radius: 50% 100%;
+            }
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .profile-card{
+            width: 100%;
+            margin: auto;
+        }
+        .second-sect{
+            width: 100%;
+            margin: auto;  
+        }
+        .road-map{
+    width:100%;
+    margin:auto;
+    padding-top:30px;
+}
+.route iframe{
+width: 100%;
+}
+    </style>
+
+
+</head>
+<body class="bg-slate-50 font-sans text-gray-800">
+
+   <body class="bg-stone-50 font-sans text-slate-900">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b-2 border-amber-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-black tracking-tight text-slate-900">
+                        RUCHU BOYS <span class="text-amber-700">HIGH</span>
+                    </span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-700 hover:text-amber-700 font-semibold transition">Home</a>
+                    <a href="about us.html" class="text-slate-700 hover:text-amber-700 font-semibold transition">About Us</a>
+                    <a href="school life.html" class="text-slate-700 hover:text-amber-700 font-semibold transition">School Life</a>
+                    
+                    
+                    <a href="https://assignment.githumuseniorboysschool.com" 
+                       class="bg-amber-100 text-amber-900 border border-amber-300 px-4 py-2 rounded-lg hover:bg-amber-200 transition font-bold">
+                       Holiday Assignment
+                    </a>
+                    
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-stone-100 px-4 pt-2 pb-6 space-y-2 shadow-inner border-t border-stone-200">
+            <a href="index.html" class="block py-3 text-slate-800 border-b border-stone-200 font-medium">Home</a>
+            <a href="about us.html" class="block py-3 text-slate-800 border-b border-stone-200 font-medium">About Us</a>
+            <a href="school life.html" class="block py-3 text-slate-800 border-b border-stone-200 font-medium">School Life</a>
+            <a href="school life.html" class="block py-3 text-slate-800 border-b border-stone-200 font-medium">B.O.M</a>
+            <div class="pt-4 space-y-3">
+                <a href="" class="block text-center bg-amber-200 text-amber-900 py-3 rounded-lg font-bold">Assignments</a>
+                
+            </div>
+        </div>
+    </nav>
+
+<div class="pt-0 bg-stone-50 w-full"> 
+    <div class="relative group max-w-[1400px] mx-auto overflow-hidden shadow-2xl rounded-lg md:rounded-xl border-b-8 border-amber-200">
+        
+        <div class="swiper mySwiper w-full h-[40vh] sm:h-[50vh] lg:h-[75vh] min-h-[300px] bg-stone-200">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide relative flex items-center justify-center">
+                    <img src="pictures/49.jpeg" class="w-full h-full object-cover" alt="School Gate">
+                    <div class="absolute inset-0 bg-slate-900/20 flex items-center justify-center p-4">
+                        <h2 class="text-white text-2xl sm:text-4xl md:text-6xl font-bold italic tracking-tight text-center drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+                            Our School
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="pictures/bus.jpeg" class="w-full h-full object-cover" alt="School Bus">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="pictures/52.jpeg" class="w-full h-full object-cover" alt="Photo 2">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="pictures/10.jpeg" class="w-full h-full object-cover" alt="Photo 3">
+                </div>
+                 <div class="swiper-slide flex items-center justify-center">
+                    <img src="pictures/10.jpeg" class="w-full h-full object-cover" alt="Photo 3">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="pictures/princi.jpeg" class="w-full h-full object-cover" alt="Principal">
+                </div>
+            </div>
+
+            <div class="swiper-pagination !bottom-4 sm:!bottom-8"></div>
+        </div>
+
+        <div class="absolute bottom-4 left-0 right-0 md:left-auto md:right-6 z-10 flex justify-center md:justify-end items-center gap-2 sm:gap-3 px-4">
+            
+            <button id="playPauseBtn" class="bg-amber-50 hover:bg-white text-slate-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all shadow-lg border border-amber-200">
+                <i id="playPauseIcon" class="fa-solid fa-pause text-sm sm:text-base"></i>
+            </button>
+
+            <div class="flex gap-1 bg-slate-900/80 backdrop-blur-md p-1.5 rounded-full border border-white/10 shadow-xl">
+                <button id="prevBtn" class="hover:bg-slate-700 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button id="nextBtn" class="hover:bg-slate-700 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+ <section class="relative pt-6 md:pt-16 pb-12 bg-stone-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 items-center">
+        
+        <div class="animate__animated animate__fadeInUp text-left w-full">
+            <h2 class="text-3xl md:text-6xl lg:text-7xl font-black leading-none text-slate-900 uppercase tracking-tighter">
+                RUCHU <br>
+                <span class="text-amber-700 italic font-serif font-semibold normal-case text-2xl md:text-5xl lg:text-6xl block mt-1">Boys High & Senior School</span>
+            </h2>
+            
+            <div class="mt-6 space-y-4 md:space-y-6 lg:border-l-4 lg:border-amber-200 lg:pl-6">
+                
+                <div class="flex items-center gap-3 md:gap-4 group">
+                    <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 shadow-sm transition-colors">
+                        <i class="fa-solid fa-phone text-sm md:text-base"></i>
+                    </div>
+                    <div>
+                        <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400">Call Us</p>
+                        <a href="tel:+254719718124" class="text-base md:text-lg font-bold text-slate-900 hover:text-amber-700 transition-colors">+254 719 718 124</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3 md:gap-4 group">
+                    <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 shadow-sm transition-colors">
+                        <i class="fa-solid fa-envelope text-sm md:text-base"></i>
+                    </div>
+                    <div class="min-w-0"> <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400">Email Us</p>
+                        <a href="mailto:githumuhigh2008@yahoo.com" class="text-base md:text-lg font-bold text-slate-900 hover:text-amber-700 transition-colors break-all">githumuhigh2008@yahoo.com</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3 md:gap-4 group">
+                    <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-slate-900 rounded-full flex items-center justify-center text-amber-100 shadow-lg transition-colors mt-1">
+                        <i class="fa-solid fa-location-dot text-sm md:text-base"></i>
+                    </div>
+                    <div>
+                        <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-slate-400">Find Us</p>
+                        <p class="text-base md:text-lg font-bold text-slate-900 leading-tight">
+                            P.O. BOX 10, <br>
+                            <span class="text-amber-700">Thika, Kenya</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                <button class="bg-slate-900 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-slate-800 transition-all shadow-lg w-full sm:w-auto uppercase text-sm tracking-wide">
+                    Scroll Up
+                </button>
+                <button class="border-2 border-amber-700 text-amber-800 px-8 py-3.5 rounded-lg font-bold hover:bg-amber-50 transition-all w-full sm:w-auto uppercase text-sm tracking-wide">
+                    Official Website
+                </button>
+            </div>
+        </div>
+
+        <div class="relative w-full animate__animated animate__fadeIn mb-4 lg:mb-0">
+            <div class="relative h-[220px] sm:h-[300px] md:h-[500px] w-full curved-edge overflow-hidden shadow-2xl border-r-4 md:border-r-[12px] border-slate-900">
+                <img src="photos/best.jpg" class="w-full h-full object-cover" alt="School Campus">
+                <div class="absolute inset-0 bg-amber-900/5"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-stone-50 font-sans pb-8"> 
+    <div class="pt-8 container mx-auto px-4 mb-4">
+        <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            </div>
+    </div>
+
+    <div id="lightbox" class="fixed inset-0 bg-slate-950/95 z-[100] hidden flex-col items-center justify-center p-4 backdrop-blur-sm">
+        <button id="closeBtn" class="absolute top-6 right-6 text-amber-100 text-5xl hover:text-white transition-all z-[120] cursor-pointer">&times;</button>
+        <button id="prevBtn" class="absolute left-0 top-0 bottom-0 w-20 md:w-32 flex items-center justify-center text-white text-5xl hover:bg-white/5 transition-all z-[110] cursor-pointer outline-none">
+            <span class="bg-slate-900/50 w-12 h-12 flex items-center justify-center rounded-full">&#10094;</span>
+        </button>
+        <button id="nextBtn" class="absolute right-0 top-0 bottom-0 w-20 md:w-32 flex items-center justify-center text-white text-5xl hover:bg-white/5 transition-all z-[110] cursor-pointer outline-none">
+            <span class="bg-slate-900/50 w-12 h-12 flex items-center justify-center rounded-full">&#10095;</span>
+        </button>
+        <div class="relative flex flex-col items-center max-w-5xl w-full pointer-events-none">
+            <img id="lightboxImg" src="" alt="Gallery View" class="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl border-4 border-slate-800 pointer-events-auto">
+            <div class="mt-6 text-center pointer-events-auto">
+                <p id="lightboxCaption" class="text-amber-200 text-lg md:text-xl font-serif italic mb-2 px-4"></p>
+                <div id="counter" class="text-slate-400 font-bold tracking-widest text-xs uppercase"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const galleryGrid = document.getElementById('galleryGrid');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const counter = document.getElementById('counter');
+        
+        const imageData = [
+            { src: 'pictures/517419683_713875488287138_5673086301771650042_n.jpg', note: "Ruchu Boys Students and Faculty Group Photo" },
+            { src: 'pictures/10.jpeg', note: "Form 4 Physics Practical Session" },
+            { src: 'pictures/11.jpeg', note: "Morning Assembly at the Main Square" },
+            { src: 'pictures/12.jpeg', note: "School Bus arriving for Games Day" }
+        ];
+
+        let currentIndex = 0;
+
+        imageData.forEach((img, i) => {
+            const div = document.createElement('div');
+            div.className = "relative overflow-hidden rounded-xl shadow-lg bg-white cursor-pointer group border-b-4 border-transparent hover:border-amber-500 transition-all";
+            div.innerHTML = `
+                <img src="${img.src}" loading="lazy" class="w-full h-56 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-white text-xs font-bold">${img.note}</p>
+                </div>
+            `;
+            div.onclick = () => {
+                currentIndex = i;
+                showImage();
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            };
+            galleryGrid.appendChild(div);
+        });
+
+        function showImage() {
+            const item = imageData[currentIndex];
+            lightboxImg.src = item.src;
+            lightboxCaption.innerText = item.note;
+            counter.innerText = `PHOTO ${currentIndex + 1} OF ${imageData.length}`;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % imageData.length;
+            showImage();
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + imageData.length) % imageData.length;
+            showImage();
+        }
+
+        document.getElementById('nextBtn').onclick = (e) => { e.stopPropagation(); nextImage(); };
+        document.getElementById('prevBtn').onclick = (e) => { e.stopPropagation(); prevImage(); };
+        document.getElementById('closeBtn').onclick = () => {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        };
+
+        window.onkeydown = (e) => {
+            if (lightbox.classList.contains('hidden')) return;
+            if (e.key === "ArrowRight") nextImage();
+            if (e.key === "ArrowLeft") prevImage();
+            if (e.key === "Escape") document.getElementById('closeBtn').onclick();
+        };
+    </script>
+
+    <div class="mt-4 text-center px-4">
+        <a href="school life.html" 
+           class="inline-flex items-center justify-center gap-2 md:gap-3 bg-slate-900 text-[#f5f5f4] px-6 py-3 md:px-10 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-slate-800 transition-all shadow-lg hover:shadow-slate-900/20 hover:-translate-y-1 group w-full sm:w-auto border-b-4 border-amber-500">
+            <span class="tracking-wide uppercase">View Full Photo Gallery</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6 text-amber-400 transition-transform group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+
+
+<section class="second-sect py-12 bg-stone-50">
+    <div class="profile-card max-w-5xl mx-auto bg-white p-6 md:p-12 rounded-2xl shadow-xl text-center border border-amber-100">
+        <img id="profile-photo" src="" alt="Profile Photo" class="rounded-full w-32 h-32 md:w-44 md:h-44 mx-auto mb-6 shadow-lg object-cover border-4 border-amber-700">
+        
+        <h1 id="profile-name" class="text-3xl md:text-4xl font-black text-slate-900 mb-2 uppercase tracking-tight"></h1>
+        <h2 id="profile-title" class="text-lg md:text-xl font-bold text-amber-700 mb-4 tracking-wide"></h2>
+        
+        <div class="relative px-2 md:px-12">
+            <span class="text-5xl md:text-7xl text-amber-100 absolute top-[-30px] left-0 font-serif opacity-50">"</span>
+            <p id="profile-remarks" class="text-base md:text-lg text-slate-600 italic leading-relaxed mb-8 relative z-10 font-medium"></p>
+            <span class="text-5xl md:text-7xl text-amber-100 absolute bottom-[-50px] right-0 font-serif opacity-50">"</span>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2 md:gap-4 mt-12">
+            <button data-target="0" class="nav-btn bg-white border-2 border-slate-900 text-slate-900 font-bold py-2 px-4 md:px-8 rounded-full transition transform hover:bg-slate-900 hover:text-white active:scale-95 shadow-sm text-sm md:text-base">Principal</button>
+            <button data-target="1" class="nav-btn bg-white border-2 border-slate-900 text-slate-900 font-bold py-2 px-4 md:px-8 rounded-full transition transform hover:bg-slate-900 hover:text-white active:scale-95 shadow-sm text-sm md:text-base">Deputy</button>
+            <button data-target="2" class="nav-btn bg-white border-2 border-slate-900 text-slate-900 font-bold py-2 px-4 md:px-8 rounded-full transition transform hover:bg-slate-900 hover:text-white active:scale-95 shadow-sm text-sm md:text-base">Deputy Admin</button>
+            <button data-target="3" class="nav-btn bg-white border-2 border-slate-900 text-slate-900 font-bold py-2 px-4 md:px-8 rounded-full transition transform hover:bg-slate-900 hover:text-white active:scale-95 shadow-sm text-sm md:text-base">Dean</button>
+        </div>
+    </div>
+
+    <style>
+        /* Styling for the active Ruchu Boys Black/Slate button */
+        .active-btn {
+            background-color: #0f172a !important; /* slate-900 */
+            color: #fef3c7 !important; /* amber-100 text for contrast */
+            border-color: #0f172a !important;
+            box-shadow: 0 4px 14px 0 rgba(15, 23, 42, 0.4);
+        }
+    </style>
+
+    <script>
+        // Your existing script remains unchanged and will work perfectly with the IDs above.
+        document.addEventListener('DOMContentLoaded', () => {
+            const profiles = [
+                {
+                    name: "H.M Kariuki",
+                    title: "Chief Principal",
+                    remarks: "Welcome to our institution. We are committed to fostering an environment of academic excellence and personal growth. Our dedicated staff works tirelessly to ensure every student reaches their full potential.",
+                    photo: "" 
+                },
+                {
+                    name: "Mr. Vincent Mutuko",
+                    title: "Deputy Academics",
+                    remarks: "I am here to support our students and staff in every way. My goal is to maintain a safe and supportive learning community where everyone can thrive and feel valued.",
+                    photo: "" 
+                },
+                {
+                    name: "Mr. Macharia Judah",
+                    title: "Deputy Administration",
+                    remarks: "Teaching is my passion. I believe in a holistic approach to education, inspiring curiosity and critical thinking. I look forward to guiding our students on their learning journeys.",
+                    photo: "" 
+                },
+                {
+                    name: "Mr. Patrick Munge",
+                    title: "Dean of Students",
+                    remarks: "Excellence in education is not a moment; it’s the daily lesson we insist our students practise.",
+                    photo: "pictures/munge.jpeg" 
+                }
+            ];
+
+            const photoEl = document.getElementById('profile-photo');
+            const nameEl = document.getElementById('profile-name');
+            const titleEl = document.getElementById('profile-title');
+            const remarksEl = document.getElementById('profile-remarks');
+            const buttons = document.querySelectorAll('.nav-btn');
+
+            function updateProfile(index) {
+                const profile = profiles[index];
+                photoEl.src = profile.photo;
+                photoEl.alt = profile.name;
+                nameEl.textContent = profile.name;
+                titleEl.textContent = profile.title;
+                remarksEl.textContent = profile.remarks;
+            }
+
+            function updateButtonState(targetIndex) {
+                buttons.forEach((btn, index) => {
+                    if (index == targetIndex) {
+                        btn.classList.add('active-btn');
+                    } else {
+                        btn.classList.remove('active-btn');
+                    }
+                });
+            }
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetIndex = parseInt(button.getAttribute('data-target'));
+                    updateProfile(targetIndex);
+                    updateButtonState(targetIndex);
+                });
+            });
+
+            updateProfile(0);
+            updateButtonState(0);
+        });
+    </script>
+</section>
+
+<section class="bg-[#0f172a] py-12 px-4 md:px-12 lg:px-24 text-[#f5f5f4] overflow-hidden border-y-4 border-amber-500/20">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8 md:gap-20">
+    
+    <div class="w-full md:w-5/12">
+      <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-slate-800 shadow-2xl rounded-xl border-4 border-slate-700">
+        <img 
+          src="pictures/18.jpeg" 
+          alt="School Principal" 
+          class="w-full h-full object-cover" 
+        /> </div>
+    </div>
+
+    <div class="w-full md:w-7/12 space-y-6">
+      <div class="flex flex-row items-stretch gap-4">
+        <div class="w-1.5 md:w-2 bg-amber-500 shrink-0 rounded-full"></div>
+        
+        <div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight uppercase text-white">
+            Principal's <br class="hidden md:block"/>
+            Official <br class="hidden md:block"/>
+            Remarks
+          </h2>
+        </div>
+      </div>
+
+      <div class="max-w-xl">
+        <div id="remarks-text" class="text-base md:text-lg text-stone-300 leading-relaxed font-medium line-clamp-3 transition-all duration-500">
+          <p>
+            Welcome to the official website of Ruchu Boys High School. 
+          </p>
+
+          <p class="mt-4">
+            As a premier Extra-County institution with a deep-rooted history in missionary excellence, our mission transcends mere academic instruction; we are dedicated to the holistic 'molding of men.' Our school stands as a beacon of discipline and hard work in the heart of Murang’a County, providing a serene environment where students are challenged to reach their full potential.
+          </p>
+
+          <p class="mt-4">
+            Furthermore, Ruchu Boys stands at the forefront of educational transformation as a specialized hub for Competency-Based Curriculum (CBC) implementation. We take pride in our role as a training center for educators across the region, fostering a collaborative environment where teachers are equipped with the pedagogical tools necessary for the 21st century.
+          </p>
+
+          <p class="mt-4 font-serif italic border-l-2 border-amber-500/50 pl-4 text-stone-200">
+            "Excellence is our tradition, and character is our strength."
+          </p>
+        </div>
+        
+        <button onclick="toggleRemarks()" id="toggle-btn" class="mt-8 group flex items-center gap-3 text-amber-500 font-bold tracking-widest uppercase text-xs border-b-2 border-amber-500/30 pb-2 hover:text-white hover:border-white transition-all">
+          <span id="btn-text">Read Full Message</span>
+          <svg id="btn-icon" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleRemarks() {
+    const textContainer = document.getElementById('remarks-text');
+    const btnText = document.getElementById('btn-text');
+    const btnIcon = document.getElementById('btn-icon');
+
+    if (textContainer.classList.contains('line-clamp-3')) {
+      textContainer.classList.remove('line-clamp-3');
+      btnText.innerText = 'Read Less';
+      btnIcon.classList.add('rotate-180'); 
+    } else {
+      textContainer.classList.add('line-clamp-3');
+      btnText.innerText = 'Read Full Message';
+      btnIcon.classList.remove('rotate-180');
+    }
+  }
+</script>
+
+<section class="bg-[#0f172a] text-[#f5f5f4] py-12 md:py-20 border-y-4 border-amber-500/20">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 text-center">
+        <div class="group">
+            <div class="text-3xl md:text-5xl font-black text-amber-500 mb-1 md:mb-2 transition-transform group-hover:scale-110 duration-300">1251+</div>
+            <div class="text-[#d6d3d1] uppercase tracking-widest text-[10px] md:text-xs font-bold">Current Students</div>
+            <div class="h-1 w-8 bg-amber-500 mx-auto mt-3 rounded-full opacity-50"></div>
+        </div>
+
+        <div class="group">
+            <div class="text-3xl md:text-5xl font-black text-amber-500 mb-1 md:mb-2 transition-transform group-hover:scale-110 duration-300">50</div>
+            <div class="text-[#d6d3d1] uppercase tracking-widest text-[10px] md:text-xs font-bold">Expert Teachers</div>
+            <div class="h-1 w-8 bg-amber-500 mx-auto mt-3 rounded-full opacity-50"></div>
+        </div>
+
+        <div class="group">
+            <div class="text-3xl md:text-5xl font-black text-amber-500 mb-1 md:mb-2 transition-transform group-hover:scale-110 duration-300">10+</div>
+            <div class="text-[#d6d3d1] uppercase tracking-widest text-[10px] md:text-xs font-bold">Academic Departments</div>
+            <div class="h-1 w-8 bg-amber-500 mx-auto mt-3 rounded-full opacity-50"></div>
+        </div>
+
+        <div class="group">
+            <div class="text-3xl md:text-5xl font-black text-amber-500 mb-1 md:mb-2 transition-transform group-hover:scale-110 duration-300">12</div>
+            <div class="text-[#d6d3d1] uppercase tracking-widest text-[10px] md:text-xs font-bold">Elective Subjects</div>
+            <div class="h-1 w-8 bg-amber-500 mx-auto mt-3 rounded-full opacity-50"></div>
+        </div>
+    </div>
+</section>
+
+<section class="py-12 md:py-16 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+        
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-12 gap-4">
+            <div class="text-left">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-2 uppercase tracking-tight">Ruchu Boys Highlights</h2>
+                <div class="h-1.5 w-20 bg-amber-500 rounded-full"></div>
+            </div>
+            <p class="text-slate-600 max-w-md md:text-right font-medium text-sm md:text-base">
+                A glimpse into the daily life, academic excellence, and vibrant culture at Ruchu High & Senior School.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="md:col-span-2 group relative overflow-hidden rounded-3xl shadow-xl bg-slate-900 h-[350px] md:h-[500px] transition-all duration-500 hover:-translate-y-2 cursor-pointer border-b-8 border-amber-500">
+                <div class="w-full h-full overflow-hidden">
+                    <img src="photos/contact.jpg" alt="Our School" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 md:p-10">
+                    <span class="bg-amber-500 text-slate-950 text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-4 inline-block">Established Excellence</span>
+                    <h3 class="text-3xl md:text-5xl font-bold text-white mb-3">Our School</h3>
+                    <p class="text-stone-200 text-base md:text-lg max-w-xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0 hidden md:block">
+                        A serene environment designed to inspire discipline, academic focus, and character development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl shadow-lg bg-slate-900 h-[350px] md:h-auto transition-all duration-500 hover:-translate-y-2 cursor-pointer border-b-4 border-slate-700">
+                <div class="w-full h-full overflow-hidden">
+                    <img src="pictures/book.jpg" alt="Library" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-1 uppercase tracking-wide">Our Library</h3>
+                    <p class="text-amber-400 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Resource Center</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl shadow-lg bg-slate-900 h-[300px] transition-all duration-500 hover:-translate-y-2 cursor-pointer border-b-4 border-slate-700">
+                <div class="w-full h-full overflow-hidden">
+                    <img src="pictures/27.jpeg" alt="Students" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h3 class="text-xl font-bold text-white mb-1 uppercase tracking-wide">Student Life</h3>
+                    <p class="text-stone-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Building futures together.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl shadow-lg bg-slate-900 h-[300px] transition-all duration-500 hover:-translate-y-2 cursor-pointer border-b-4 border-slate-700">
+                <div class="w-full h-full overflow-hidden">
+                    <img src="photos/contact.jpg" alt="Values" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h3 class="text-xl font-bold text-white mb-1 uppercase tracking-wide">Values</h3>
+                    <p class="text-stone-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Integrity and Service.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl shadow-lg bg-slate-900 h-[300px] transition-all duration-500 hover:-translate-y-2 cursor-pointer border-b-4 border-slate-700">
+                <div class="w-full h-full overflow-hidden">
+                    <img src="photos/ict.jpg" alt="Sports" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h3 class="text-xl font-bold text-white mb-1 uppercase tracking-wide">Games</h3>
+                    <p class="text-stone-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Building competitive spirit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<section class="road-map">
+    <div class="route"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.412581048867!2d36.900611399999995!3d-0.8171246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828c792b47874a5%3A0x35549a06935b5080!2sRuchu%20Boys%20High%20School!5e0!3m2!1sen!2ske!4v1774418826593!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+    </section>
+ 
+<footer class="bg-[#0f172a] text-[#f5f5f4] pt-16 pb-8 border-t-4 border-amber-500">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center font-black text-slate-900 text-2xl">G</div>
+                    <h2 class="text-2xl font-black tracking-tighter uppercase">RUCHU <span class="text-amber-500">BOYS</span></h2>
+                </div>
+                <p class="text-stone-400 leading-relaxed font-medium">
+                    To be a nationally outstanding institution in academic and co-curricular achievements, molding men of character.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-3 uppercase tracking-widest">Navigation</h4>
+                <ul class="space-y-4 text-stone-400 font-medium">
+                    <li><a href="index.html" class="hover:text-amber-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Home</a></li>
+                    <li><a href="about us.html" class="hover:text-amber-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> About Us</a></li>
+                    <li><a href="school life.html" class="hover:text-amber-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> School Life</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-3 uppercase tracking-widest">Digital Portals</h4>
+                <ul class="space-y-4 text-stone-400 font-medium">
+                    <li>
+                        <a href="" class="hover:text-amber-500 transition-colors flex items-center gap-2">
+                            <i class="fa-solid fa-cloud-arrow-down text-[10px]"></i> Holiday Assignments
+                        </a>
+                    </li>
+                
+                   
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-3 uppercase tracking-widest">Contact Us</h4>
+                <div class="text-stone-400 space-y-3 text-sm">
+                    <p class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-amber-500"></i> P.O. BOX 10, Githumu, Murang'a County, Kenya</p>
+                    <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-amber-500"></i> +254 719 718 124</p>
+                    <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-amber-500"></i> githumuhigh2008@yahoo.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500 font-bold uppercase tracking-widest">
+            <p>&copy; 2026 Ruchu Boys Senior School. Excellence is our Tradition.</p>
+            
+        </div>
+    </div>
+</footer>
+
+
+
+<button id="backToTop" onclick="scrollToTop()" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        speed: 800,
+        grabCursor: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: "#nextBtn",
+            prevEl: "#prevBtn",
+        },
+    });
+
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const icon = document.getElementById('playPauseIcon');
+    let isPlaying = true;
+
+    playPauseBtn.addEventListener('click', () => {
+        if (isPlaying) {
+            swiper.autoplay.stop();
+            icon.classList.replace('fa-pause', 'fa-play');
+        } else {
+            swiper.autoplay.start();
+            icon.classList.replace('fa-play', 'fa-pause');
+        }
+        isPlaying = !isPlaying;
+    });
+</script>
+<script>
+// Get the button
+const mybutton = document.getElementById("backToTop");
+
+// When the user scrolls down 300px from the top of the document, show the button
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // This makes it scroll smoothly
+  });
+}
+</script>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>

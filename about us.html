@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>githumu senior school | Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .blue-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+    </style>
+
+    <style>
+        #backToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+  z-index: 99; /* Sit on top of everything */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #1e3a8a; /* Your Theme Blue */
+  color: white; /* Arrow color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Make it a circle */
+  font-size: 18px; /* Increase font size */
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+#backToTop:hover {
+  background-color: #3b82f6; /* Lighter blue on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+</style>
+     
+<style>
+     @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+
+
+  
+  
+
+
+     .second-sect {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f5f9; /* A light, neutral background */
+            color: #1e293b; /* Darker text for readability */
+            padding: 2rem;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 42rem;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;}
+        /* Mobile-friendly curve: less extreme on small screens */
+        .curved-edge {
+            border-radius: 0 0 0 100px;
+        }
+        @media (min-width: 768px) {
+            .curved-edge {
+                border-bottom-left-radius: 50% 100%;
+                border-top-left-radius: 50% 100%;
+            }
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .road-map{
+    width:100%;
+    margin:auto;
+    padding-top:30px;
+}
+.route iframe{
+width: 100%;
+}
+    </style>
+
+
+</head>
+<body class="bg-slate-50 font-sans text-gray-800">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b-2 border-amber-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-black tracking-tight text-slate-900">
+                        RUCHU BOYS <span class="text-amber-700">HIGH</span>
+                    </span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-700 hover:text-amber-700 font-semibold transition">Home</a>
+                    <a href="about us.html" class="text-slate-700 hover:text-amber-700 font-semibold transition">About Us</a>
+                    <a href="school life.html" class="text-slate-700 hover:text-amber-700 font-semibold transition">School Life</a>
+                    <a href="school life.html" class="text-slate-700 hover:text-amber-700 font-semibold transition">B.O.M</a>
+                    
+                    <a href="https://assignment.githumuseniorboysschool.com" 
+                       class="bg-amber-100 text-amber-900 border border-amber-300 px-4 py-2 rounded-lg hover:bg-amber-200 transition font-bold">
+                       Holiday Assignment
+                    </a>
+                    
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-stone-100 px-4 pt-2 pb-6 space-y-2 shadow-inner border-t border-stone-200">
+            <a href="index.html" class="block py-3 text-slate-800 border-b border-stone-200 font-medium">Home</a>
+            <a href="about us.html" class="block py-3 text-slate-800 border-b border-stone-200 font-medium">About Us</a>
+            <a href="school life.html" class="block py-3 text-slate-800 border-b border-stone-200 font-medium">School Life</a>
+           
+            <div class="pt-4 space-y-3">
+                <a href="" class="block text-center bg-amber-200 text-amber-900 py-3 rounded-lg font-bold">Assignments</a>
+                
+            </div>
+        </div>
+    </nav>
+    <section class="w-full bg-[#fdfaf5]">
+  <div class="max-w-full mx-auto flex flex-col md:flex-row items-stretch justify-between overflow-hidden bg-white shadow-sm border-b border-gray-200 min-h-[60vh]">
+    
+    <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center space-y-6">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#4a3728]">
+        About Us
+      </h2>
+      <div class="space-y-2">
+        <p class="text-2xl md:text-3xl font-semibold text-[#8b7355] tracking-wide uppercase">
+          Ruchu Boys High School
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed max-w-md">
+          Dedicated to excellence and character building, fostering a community of young men ready to lead.
+        </p>
+      </div>
+      <div>
+        <button class="mt-4 px-8 py-3 bg-[#2d2d2d] text-white font-medium rounded-md hover:bg-[#8b7355] transition duration-300 shadow-lg">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/2 relative">
+      <img 
+        src="photos/best.jpg" 
+        alt="Ruchu Boys High School Students" 
+        class="w-full h-full object-cover min-h-[350px] md:min-h-full"
+      />
+    </div>
+
+  </div>
+</section>
+    
+<section class="bg-[#fdfaf5] py-16 px-4 md:px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <h1 class="text-3xl md:text-5xl font-serif font-bold text-[#4a3728] uppercase tracking-tight mb-4">
+      Welcome to our School
+    </h1>
+    <p class="text-lg md:text-xl text-[#8b7355] font-medium">
+      Explore our comprehensive curriculum and learn all these subjects
+    </p>
+    <div class="w-24 h-1 bg-[#8b7355] mx-auto mt-6"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto space-y-16">
+    
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div class="bg-[#4a3728] p-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase">8-4-4 Curriculum Subjects</h2>
+      </div>
+      <div class="p-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355] transition-colors">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">English</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Kiswahili</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Mathematics</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Biology</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Physics</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Chemistry</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">C.R.E</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">History</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Geography</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Homescience</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Agriculture</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Music</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">German / French</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Business</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Computer Studies</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-[#fdfaf5] rounded-lg border border-[#8b7355]/10 hover:border-[#8b7355]">
+            <span class="w-2 h-2 rounded-full bg-[#8b7355]"></span>
+            <span class="text-sm md:text-base font-semibold text-[#4a3728]">Art & Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div class="bg-[#8b7355] p-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase">Senior School (CBC) Pathways</h2>
+      </div>
+      <div class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="space-y-4">
+          <h3 class="font-bold text-[#4a3728] border-b border-[#8b7355] pb-2 uppercase text-sm tracking-wider">STEM & Technical Track</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Core / Essential Maths</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Physics, Chemistry, Biology</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> ICT & Computer Studies</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Electricity & Power Mechanics</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Building & Construction</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="font-bold text-[#4a3728] border-b border-[#8b7355] pb-2 uppercase text-sm tracking-wider">Humanities & Languages</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> English & Kiswahili</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Literature & Fasihi</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> C.R.E, History, Geography</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> German / French</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Community Service Learning (CSL)</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="font-bold text-[#4a3728] border-b border-[#8b7355] pb-2 uppercase text-sm tracking-wider">Arts & Applied Sciences</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Applied Agriculture</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Homescience</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Fine Art / Theatre & Film</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Music & Dance</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Physical Education</li>
+            <li class="flex items-center text-sm"><span class="mr-2">▸</span> Business Studies</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-[#fdfaf5] py-12 px-6 md:py-20 md:px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto space-y-20 md:space-y-32">
+    
+    <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-20">
+      <div class="w-full md:w-1/2 space-y-5 order-2 md:order-1">
+        <span class="text-[#8b7355] font-semibold tracking-widest uppercase text-sm">Our Heritage</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#4a3728] uppercase tracking-tight">
+          Brief History
+        </h2>
+        <div class="w-20 h-1 bg-[#8b7355]"></div>
+        <p class="text-gray-700 leading-relaxed text-lg text-justify">
+          Ruchu Boys High School, located in the heart of Kandara, Murang’a County, has long stood as a beacon of academic excellence and character formation in Central Kenya. Since its inception, the school has remained dedicated to nurturing disciplined, visionary young men. With a strong foundation in both spiritual and academic growth, Ruchu Boys has evolved into a premier institution known for its consistent performance in national examinations and its vibrant presence in co-curricular activities.
+        </p>
+      </div>
+      <div class="w-full md:w-1/2 flex justify-center order-1 md:order-2">
+        <div class="relative group">
+          <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative z-10">
+            <img 
+              src="pictures/14.jpeg" 
+              alt="Ruchu Boys Campus" 
+              class="w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
+            />
+          </div>
+          <div class="absolute -top-4 -right-4 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-[#8b7355]/20 rounded-full -z-0"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-20">
+      <div class="w-full md:w-1/2 flex justify-center">
+        <div class="relative group">
+          <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative z-10">
+            <img 
+              src="pictures/13.jpeg" 
+              alt="Mission and Vision" 
+              class="w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
+            />
+          </div>
+          <div class="absolute -bottom-4 -left-4 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-[#2d2d2d]/10 rounded-full -z-0"></div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 space-y-5">
+        <span class="text-[#8b7355] font-semibold tracking-widest uppercase text-sm">Our Purpose</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#4a3728] uppercase tracking-tight">
+          Our Mission
+        </h2>
+        <div class="w-20 h-1 bg-[#4a3728]"></div>
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border-l-4 border-[#8b7355]">
+          <p class="text-gray-700 italic text-xl md:text-2xl leading-relaxed">
+            "To provide a safe environment for our learners to realize their potential and become useful in the society."
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-[#fdfaf5] py-16 px-6 md:py-24 md:px-12 lg:px-24 overflow-hidden">
+  <div class="max-w-7xl mx-auto relative">
+    
+    <div class="absolute -top-6 -left-6 w-32 h-32 bg-[#8b7355] rounded-lg hidden md:block -z-10 shadow-lg"></div>
+    <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-[#4a3728] rounded-full hidden md:block -z-10 opacity-10"></div>
+
+    <div class="bg-white shadow-2xl rounded-xl flex flex-col md:flex-row items-stretch min-h-[500px] overflow-visible border border-gray-100">
+      
+      <div class="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center items-center md:items-start space-y-8">
+        <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#4a3728] leading-tight text-center md:text-left uppercase tracking-tight">
+          Our School <span class="text-[#8b7355]">Anthem</span>
+        </h2>
+
+        <div class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left font-medium italic">
+          
+          <div class="mb-8 border-l-4 border-[#8b7355]/30 pl-4 md:pl-6">
+            <p class="mb-6">
+              O God almighty with us forever,<br>
+              Bless our Ruchu family,<br>
+              We live together forever ever,<br>
+              We join hands together forever,<br>
+              We are committed, to shine (*2)<br>
+              Ruchu boys like eagles soar.
+            </p>
+
+            <p class="mb-6">
+              In Academics we are champions,<br>
+              In co-curricular we are the stars,<br>
+              Our stake holders in our support,<br>
+              And our mission is to conquer all,<br>
+              We are committed, to shine (*2)<br>
+              Ruchu Boys like eagles soar.
+            </p>
+          </div>
+
+          <div class="uppercase tracking-widest font-bold text-[#4a3728] bg-[#fdfaf5] p-4 rounded-lg inline-block border border-[#8b7355]/20 shadow-sm">
+            Ruchu Boys (BOYS) (*2)<br>
+            <span class="text-[#8b7355]">Our trust is in God.</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 relative p-6 md:p-0">
+        <div class="h-full w-full md:scale-105 md:translate-x-8 md:-translate-y-8 shadow-2xl rounded-2xl overflow-hidden border-8 border-white bg-[#f5f0e6]">
+          <img 
+            src="pictures/anthem.jpg" 
+            alt="Ruchu Boys Anthem" 
+            class="w-full h-full object-cover min-h-[300px]"
+          />
+          <div class="absolute inset-0 bg-[#4a3728]/5 pointer-events-none"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+  }
+  .club-card-base {
+    flex: 0 0 300px;
+    height: 450px;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+  }
+  @media (min-width: 768px) {
+    .club-card-base { flex: 0 0 400px; }
+  }
+  .club-card-base:hover { transform: scale(1.02); }
+  .card-img { width: 100%; height: 100%; object-cover: cover; }
+  .card-overlay { 
+    position: absolute; inset: 0; 
+    background: linear-gradient(to top, rgba(45, 30, 18, 0.9), transparent); 
+  }
+  .card-content {
+    position: absolute; bottom: 2rem; left: 2rem; color: white;
+  }
+  .card-content h4 { font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; }
+  .card-content span { display: block; width: 3rem; height: 3px; background: #8b7355; margin-bottom: 0.5rem; }
+</style>
+
+<section class="bg-[#2d1e12] py-12 lg:py-24 overflow-hidden relative">
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8b7355]/20 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8b7355]/10 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+
+  <div class="max-w-[1400px] mx-auto px-6 mb-12 relative z-10">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 text-[#8b7355] font-black uppercase tracking-[0.2em] text-xs md:text-sm">
+          <span class="w-12 h-1 bg-[#8b7355]"></span>
+          Life at Ruchu High
+        </div>
+        <h2 class="text-5xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9]">
+          Our <span class="text-transparent" style="-webkit-text-stroke: 1.5px #8b7355;">Clubs</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative flex overflow-hidden group py-8">
+    <div class="animate-marquee whitespace-nowrap gap-6 lg:gap-10">
+      
+      <div class="club-card-base">
+        <img src="pictures/football.jpg" class="card-img" alt="Football" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Football Club</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/music.jpg" class="card-img" alt="Music" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Music & Dance</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/comp.jpg" class="card-img" alt="ICT" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>ICT Society</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/51.jpeg" class="card-img" alt="Basketball" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Basketball</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/chess.jpg" class="card-img" alt="Chess" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Chess Club</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/drama.jpg" class="card-img" alt="Drama" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Drama Club</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/football.jpg" class="card-img" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Football Club</h4></div>
+      </div>
+       <div class="club-card-base">
+        <img src="pictures/music.jpg" class="card-img" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Music & Dance</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0f172a] text-[#f5f5f4] pt-16 pb-8 border-t-4 border-amber-500">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center font-black text-slate-900 text-2xl">G</div>
+                    <h2 class="text-2xl font-black tracking-tighter uppercase">RUCHU <span class="text-amber-500">BOYS</span></h2>
+                </div>
+                <p class="text-stone-400 leading-relaxed font-medium">
+                    To be a nationally outstanding institution in academic and co-curricular achievements, molding men of character.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-3 uppercase tracking-widest">Navigation</h4>
+                <ul class="space-y-4 text-stone-400 font-medium">
+                    <li><a href="index.html" class="hover:text-amber-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Home</a></li>
+                    <li><a href="about us.html" class="hover:text-amber-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> About Us</a></li>
+                    <li><a href="school life.html" class="hover:text-amber-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> School Life</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-3 uppercase tracking-widest">Digital Portals</h4>
+                <ul class="space-y-4 text-stone-400 font-medium">
+                    <li>
+                        <a href="" class="hover:text-amber-500 transition-colors flex items-center gap-2">
+                            <i class="fa-solid fa-cloud-arrow-down text-[10px]"></i> Holiday Assignments
+                        </a>
+                    </li>
+                
+                   
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-3 uppercase tracking-widest">Contact Us</h4>
+                <div class="text-stone-400 space-y-3 text-sm">
+                    <p class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-amber-500"></i> P.O. BOX 10, Githumu, Murang'a County, Kenya</p>
+                    <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-amber-500"></i> +254 719 718 124</p>
+                    <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-amber-500"></i> githumuhigh2008@yahoo.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500 font-bold uppercase tracking-widest">
+            <p>&copy; 2026 Ruchu Boys Senior School. Excellence is our Tradition.</p>
+            
+        </div>
+    </div>
+</footer>
+<button id="backToTop" onclick="scrollToTop()" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+// Get the button
+const mybutton = document.getElementById("backToTop");
+
+// When the user scrolls down 300px from the top of the document, show the button
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // This makes it scroll smoothly
+  });
+}
+</script>
+
+      <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
